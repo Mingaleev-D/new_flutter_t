@@ -4,7 +4,9 @@
 */
 
 import 'package:flutter/material.dart';
-import 'package:new_flutter_t/theme/app_colors.dart';
+
+import '../style/app_colors.dart';
+import 'home_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -83,7 +85,10 @@ class LoginPage extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.green,
                         foregroundColor: Colors.black),
-                    onPressed: () {},
+                    onPressed: () {
+                      // todo:
+                      Navigator.of(context).pushReplacementNamed('/main');
+                    },
                     child: const Text('Login in'),
                   ),
                 ),
