@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_flutter_t/pages/edit_profile_page.dart';
 import 'package:new_flutter_t/pages/home_page.dart';
 import 'package:new_flutter_t/pages/main_page.dart';
 import 'package:new_flutter_t/style/app_colors.dart';
@@ -19,11 +20,12 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
       ),
       home: const LoginPage(),
-      initialRoute: '/welcome',
+      initialRoute: 'main',
       routes: {
-        '/welcome': (context) => const LoginPage(),
-        '/home': (context) => HomePage(),
-        '/main': (context) => const MainPage(),
+        //'login': (context) => const LoginPage(),
+        //'/home': (context) => HomePage(),
+        'main': (context) => const MainPage(),
+        '/edit_page': (context) => const EditProfilePage(),
       },
     );
   }

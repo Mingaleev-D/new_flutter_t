@@ -5,6 +5,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:new_flutter_t/pages/home_page.dart';
+import 'package:new_flutter_t/pages/profile_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -51,7 +52,6 @@ class _MainPageState extends State<MainPage> {
     HomePage(),
     const Center(child: Text("Favorite")),
     const Center(child: Text("MEssage")),
-    const Center(child: Text("Message")),
-    const Center(child: Text("User")),
+    const ProfilePage(),
   ];
 }

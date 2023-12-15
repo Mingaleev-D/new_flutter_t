@@ -4,6 +4,7 @@
 */
 
 import 'package:flutter/material.dart';
+import 'package:new_flutter_t/config/app_string.dart';
 
 import '../style/app_colors.dart';
 import 'home_page.dart';
@@ -23,7 +24,7 @@ class LoginPage extends StatelessWidget {
               children: [
                 const Spacer(),
                 const Text(
-                  'Hello, welcome back!',
+                  AppStrings.helloWelcome,
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -34,7 +35,7 @@ class LoginPage extends StatelessWidget {
                   height: 24,
                 ),
                 const Text(
-                  'Login to continue',
+                  AppStrings.loginToContinue,
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
